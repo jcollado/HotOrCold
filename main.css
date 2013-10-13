@@ -82,7 +82,7 @@ h2 {
 }
 
 #content {
-    width: 400px;
+    width: 500px;
     background: orange;
     margin: auto;
 }
@@ -97,7 +97,7 @@ form {
     background: #eee;
     background: linear-gradient(#eee, gray);
     padding: 10px;
-    margin: 140px 35px 0;
+    margin: 140px 85px 0;
     border: 2px solid gray;
     border-radius: 10px;
     box-shadow: 0 0 5px gray;
