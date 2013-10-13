@@ -61,6 +61,7 @@ table {
     border-bottom: none;
     margin: auto;
     border-radius: 25px 25px 0 0;
+    background: white;
 }
 
 #th-case .th-middle {
@@ -81,6 +82,7 @@ table {
     border: 2px solid black;
     border-radius: 50px;
     margin: -8px auto;
+    background: white;
 }
 
 #th-mercury {
