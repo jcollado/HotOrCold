@@ -50,7 +50,7 @@ table {
 /* Here starts CSS code after the reset */
 body {
     background: url("background.png");
-    min-width: 400px;
+    min-width: 600px;
 
 }
 
