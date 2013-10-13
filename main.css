@@ -48,15 +48,99 @@ table {
 }
 
 /* Here starts CSS code after the reset */
-#thermometer {
-    width: 100px;
-    position: relative;
+body {
+    background: url("background.png");
+    min-width: 400px;
+
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin: 10px auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 auto 50px;
+}
+
+.hot {
+    color: red;
+    text-shadow: 5px 5px 2px purple;
+}
+
+.cold {
+    color: aqua;
+    text-shadow: 5px 5px 2px navy;
+}
+
+#content {
+    width: 400px;
+    background: orange;
     margin: auto;
 }
 
+/****************
+form
+****************/
+
+form {
+    float: left;
+    width: 156px;
+    background: #eee;
+    background: linear-gradient(#eee, gray);
+    padding: 10px;
+    margin: 140px 35px 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+form label {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#guess {
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid gray;
+    display: block;
+    margin: 20px auto;
+}
+
+#submit {
+    font-size: 20px;
+    margin: 5px auto;
+    display: block;
+}
+
+
+/****************
+thermometer
+****************/
+
+#thermometer {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 517px;
+}
+
 #th-case .th-top {
-    height: 25px;
-    width: 48px;
+    height: 23px;
+    width: 46px;
     border: 2px solid black;
     border-bottom: none;
     margin: auto;
@@ -65,8 +149,10 @@ table {
 }
 
 #th-case .th-middle {
+    position: relative;
+    z-index: 1;
     height: 400px;
-    width: 48px;
+    width: 46px;
     border: 2px solid black;
     border-top: none;
     border-bottom: none;
@@ -75,9 +161,7 @@ table {
 }
 
 #th-case .th-bottom {
-    position: relative;
-    z-index: -1;
-    height: 100px;
+    height: 96px;
     width: 96px;
     border: 2px solid black;
     border-radius: 50px;
@@ -92,7 +176,7 @@ table {
 
 #th-mercury .th-top {
     position: absolute;
-    bottom: 500px;
+    bottom: 495px;
     left: 35px;
     height: 15px;
     width: 30px;
@@ -102,9 +186,10 @@ table {
 
 #th-mercury .th-middle {
     position: absolute;
+    z-index: 1;
     bottom: 85px;
     left: 35px;
-    height: 415px;
+    height: 410px;
     width: 30px;
     background: red;
 }
@@ -121,6 +206,7 @@ table {
 
 #th-scale {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 25px;
 }
