@@ -118,6 +118,7 @@ form label {
     border: 1px solid gray;
     display: block;
     margin: 20px auto;
+    width: 3em;
 }
 
 #submit {
