@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#new_game").click(initialize);
 
     function initialize() {
-        secretNumber = getRandomInt(0, 100);
+        secretNumber = getRandomInt(0, maxTemp);
         console.log("secretNumber: " + secretNumber);
         oldTemp = 0;
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
         var guess_value = $("#guess").val()
         console.log("guess: "  + guess_value);
 
-        var temp = 100 - Math.abs(secretNumber - guess_value);
+        var temp = maxTemp - Math.abs(secretNumber - guess_value);
         console.log("temp: " + temp);
 
         return temp;
