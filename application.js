@@ -22,6 +22,7 @@ $(document).ready(function() {
         var mercury = $("#th-mercury .th-top");
         mercury.animate({height: tempToHeight(oldTemp)}, "fast");
 
+        $("#submit").show();
         $("#feedback p").hide();
         $("#feedback_waiting").show();
 
@@ -59,6 +60,7 @@ $(document).ready(function() {
         $("#feedback p").hide();
         if (temp == maxTemp) {
             $("#feedback_guessed").show();
+            $("#submit").hide();
         }
         else if (temp > oldTemp) {
             $("#feedback_hotter").show();
