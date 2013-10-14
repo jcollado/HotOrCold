@@ -59,7 +59,7 @@ $(document).ready(function() {
         // Textual feedback
         $("#feedback p").hide();
         if (temp == maxTemp) {
-            $("#feedback_guessed").show().fadeOut().fadeIn();
+            $("#feedback_guessed").fadeIn().fadeOut().fadeIn();
             $("#submit").hide();
         }
         else if (temp > oldTemp) {
