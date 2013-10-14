@@ -148,6 +148,8 @@ input[type=submit]:hover {
 }
 
 #feedback {
+    font-size: 20px;
+    text-align: center;
     margin: 40px 85px 0;
 }
 
