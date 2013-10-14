@@ -82,7 +82,7 @@ h1 .cold {
 }
 
 #content {
-    width: 500px;
+    width: 560px;
     margin: auto;
 }
 
@@ -95,11 +95,11 @@ main_column
 }
 
 form, #feedback {
-    width: 156px;
+    width: 236px;
     background: #eee;
     background: linear-gradient(#eee, gray);
     padding: 10px;
-    margin: 120px 85px 0;
+    margin: 120px 75px 0;
     border: 2px solid gray;
     border-radius: 10px;
     box-shadow: 0 0 5px gray;
@@ -127,20 +127,26 @@ form label {
     width: 3em;
 }
 
-#submit {
+#buttons {
+    text-align: center;
+}
+
+input[type=submit] {
     font-size: 20px;
-    margin: 5px auto;
     background: #ddd;
     border: 1px solid #eee;
     border-radius: 5px;
-    display: block;
+}
+
+#new_game {
+    margin-left: 10px;
 }
 
 #feedback {
     margin: 40px 85px 0;
 }
 
-#hotter, #colder, #guessed, #neither {
+#feedback_hotter, #feedback_colder, #feedback_guessed, #feedback_neither {
     display: none;
 }
 

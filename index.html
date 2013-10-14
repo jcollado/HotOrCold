@@ -15,17 +15,20 @@
                 <form>
                     <label for="guess">Your guess</label>
                     <input type="text" name="guess" id="guess" maxlength="3" pattern="(100|[1-9]\d|\d)" required>
-                    <input type="submit" name="submit" id="submit" value="Submit">
+                    <div id="buttons">
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                        <input type="submit" name="new_game" id="new_game" value="New Game">
+                    </div>
                 </form>
                 <div id="feedback">
-                    <p>Waiting for your guess!</p>
-                    <p id="hotter">Getting <span class="hot">hotter</span>!</p>
-                    <p id="colder">Getting <span class="cold">colder</span>!</p>
-                    <p id="neither">
+                    <p id="feedback_waiting">Waiting for your guess!</p>
+                    <p id="feedback_hotter">Getting <span class="hot">hotter</span>!</p>
+                    <p id="feedback_colder">Getting <span class="cold">colder</span>!</p>
+                    <p id="feedback_neither">
                         Neither <span class="hot">hotter</span>
                         nor <span class="cold">colder</span>!
                     </p>
-                    <p id="guessed">You guessed it!</p>
+                    <p id="feedback_guessed">You guessed it!</p>
                 </div>
             </div>
             <div id="thermometer">
