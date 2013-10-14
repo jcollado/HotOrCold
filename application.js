@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    var maxTemp = 100;
+    var maxNumber = 100;
+    var maxHeight = 423; // 25 + 400 - 8 (look at css)
+    var maxTemp = null;
     var secretNumber = null;
     var oldTemp = null;
 
@@ -9,8 +11,12 @@ $(document).ready(function() {
     $("#new_game").click(initialize);
 
     function initialize() {
-        secretNumber = getRandomInt(0, maxTemp);
+        secretNumber = getRandomInt(0, maxNumber);
         console.log("secretNumber: " + secretNumber);
+
+        maxTemp = Math.max(Math.abs(100 - secretNumber),
+                           secretNumber)
+        console.log("maxTemp: " + maxTemp);
         oldTemp = 0;
 
         var mercury = $("#th-mercury .th-top");
@@ -32,7 +38,6 @@ $(document).ready(function() {
 
     // Transform temperature to height
     function tempToHeight(temp) {
-        var maxHeight = 423;
         return temp * maxHeight / maxTemp;
     }
 
