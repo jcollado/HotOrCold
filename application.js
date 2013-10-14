@@ -2,12 +2,29 @@ $(document).ready(function() {
     var secretNumber = getRandomInt(0, 100);
     console.log("secretNumber: " + secretNumber);
 
+    var oldTemp = 0;
+
     $("form").submit(function() {
         var temp = getGuessTemp(secretNumber);
+
+        // Textual feedback
+        $("#feedback p").hide();
+        if (temp == 100) {
+            $("#guessed").show();
+        }
+        else if (temp > oldTemp) {
+            $("#hotter").show();
+        } else if (temp < oldTemp) {
+            $("#colder").show();
+        } else {
+            $("#neither").show();
+        }
+        oldTemp = temp;
 
         var mercury = $("#th-mercury .th-top");
         mercury.animate({height: tempToHeight(temp)}, "fast");
 
+        // Never really submit the form
         return false;
     });
 });

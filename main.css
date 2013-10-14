@@ -71,36 +71,42 @@ h2 {
     margin: 0 auto 50px;
 }
 
-.hot {
+h1 .hot {
     color: red;
     text-shadow: 5px 5px 2px purple;
 }
 
-.cold {
+h1 .cold {
     color: aqua;
     text-shadow: 5px 5px 2px navy;
 }
 
 #content {
     width: 500px;
-    background: orange;
     margin: auto;
 }
 
 /****************
-form
+main_column
 ****************/
 
-form {
+#main_column {
     float: left;
+}
+
+form, #feedback {
     width: 156px;
     background: #eee;
     background: linear-gradient(#eee, gray);
     padding: 10px;
-    margin: 140px 85px 0;
+    margin: 120px 85px 0;
     border: 2px solid gray;
     border-radius: 10px;
     box-shadow: 0 0 5px gray;
+}
+
+form {
+    margin: 120px 85px 0;
 }
 
 form label {
@@ -128,6 +134,22 @@ form label {
     border: 1px solid #eee;
     border-radius: 5px;
     display: block;
+}
+
+#feedback {
+    margin: 40px 85px 0;
+}
+
+#hotter, #colder, #guessed, #neither {
+    display: none;
+}
+
+#feedback .hot {
+    color: purple;
+}
+
+#feedback .cold {
+    color: navy;
 }
 
 
