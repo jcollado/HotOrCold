@@ -180,22 +180,13 @@ thermometer
 
 #th-mercury .th-top {
     position: absolute;
-    bottom: 495px;
-    left: 35px;
-    height: 15px;
-    width: 30px;
-    background: red;
-    border-radius: 15px 15px 0 0;
-}
-
-#th-mercury .th-middle {
-    position: absolute;
     z-index: 1;
     bottom: 85px;
     left: 35px;
-    height: 410px;
+    height: 0px;
     width: 30px;
     background: red;
+    border-radius: 15px 15px 0 0;
 }
 
 #th-mercury .th-bottom {

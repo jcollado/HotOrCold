@@ -13,7 +13,7 @@
         <div id="content">
             <form>
                 <label for="guess">Your guess</label>
-                <input type="text" name="guess" id="guess" maxlength="3" pattern="(100|[1-9]\d|[1-9])" required>
+                <input type="text" name="guess" id="guess" maxlength="3" pattern="(100|[1-9]\d|\d)" required>
                 <input type="submit" name="submit" id="submit" value="Submit">
             </form>
             <div id="thermometer">
@@ -24,7 +24,6 @@
                 </div>
                 <div id="th-mercury">
                     <div class="th-top"></div>
-                    <div class="th-middle"></div>
                     <div class="th-bottom"></div>
                 </div>
                 <div id="th-scale">
