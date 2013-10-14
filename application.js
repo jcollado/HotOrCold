@@ -15,7 +15,7 @@ $(document).ready(function() {
         console.log("secretNumber: " + secretNumber);
 
         maxTemp = Math.max(Math.abs(100 - secretNumber),
-                           secretNumber)
+                           secretNumber);
         console.log("maxTemp: " + maxTemp);
         oldTemp = 0;
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     // Get guess temperature
     function getGuessTemp() {
-        var guess_value = $("#guess").val()
+        var guess_value = $("#guess").val();
         console.log("guess: "  + guess_value);
 
         var temp = maxTemp - Math.abs(secretNumber - guess_value);
